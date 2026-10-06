@@ -56,7 +56,7 @@ Lessons are built from **components** in `assets/`: stylesheets, quiz widgets, s
 ## Common questions
 
 **Where does it put the files? Mine ended up in `~/.claude/skills`.**
-In the directory you ran `/teach` in. Earlier versions of `SKILL.md` used `./` for two different roots: the format docs that sit next to the skill, and your workspace folders. Agents sometimes resolved both against the skill's install directory and wrote the course there ([#377](https://github.com/mattpocock/skills/issues/377)). The skill now names the workspace root explicitly, so lessons, references and records land where you ran it. Run it in a directory you are happy to give over to one topic.
+In the directory you ran `/teach` in ([#377](https://github.com/mattpocock/skills/issues/377)).
 
 **Do I stay in one session, or start a new one per lesson?**
 All three approaches work: staying in the same session, re-invoking `/teach` in a new session, or opening a new session in the same folder. Each lesson is its own invocation. The course state lives in the folder, not in the conversation. Common practice is to open a fresh session in the workspace and say `/teach next lesson for <topic>`.
